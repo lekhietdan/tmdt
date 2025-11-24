@@ -1,0 +1,53 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js build
+.next/
+out/
+dist/
+
+# Logs
+logs
+*.log
+*.log.*
+log.txt
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# Coverage
+coverage/
+
+# Local build artifacts
+*.pid
+*.seed
+*.pid.lock
+
+# Typescript
+*.tsbuildinfo
+
+# Optional cache
+.cache/
+.next/cache/
+
+# Turbo Repo
+turbo/
