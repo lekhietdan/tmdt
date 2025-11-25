@@ -12,9 +12,9 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="relative w-14 h-14 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
+              <div className="relative w-20 h-20 bg-white/10 rounded-lg p-2 backdrop-blur-sm">
                 <Image
-                  src="/logo.jpg"
+                  src="/lozgo.png"
                   alt="Chả Cá Cây Sang"
                   fill
                   className="object-contain"
@@ -70,20 +70,28 @@ export function Footer() {
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
-                <div>
-                  <p className="text-white/60 text-xs uppercase tracking-wider mb-1">Địa Chỉ</p>
-                  <p className="text-white/90 text-sm leading-relaxed">123 Phố Vàng, Hà Nội, Việt Nam</p>
+                <div className="flex-1">
+                  <p className="text-white/60 text-xs uppercase tracking-wider mb-1">Địa Chỉ 1</p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-2">87 - 89 Nguyễn Đức Trung, P.Thanh Khê Đông, Q.Thanh Khê, TP.Đà Nẵng</p>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <a href="tel:0917987656" className="text-white/90 text-sm hover:text-white transition-colors">0917 987 656</a>
+                    <span className="text-white/60">-</span>
+                    <a href="tel:0914168712" className="text-white/90 text-sm hover:text-white transition-colors">0914 168 712</a>
+                  </div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Phone className="w-5 h-5 text-white" />
+                  <MapPin className="w-5 h-5 text-white" />
                 </div>
-                <div>
-                  <p className="text-white/60 text-xs uppercase tracking-wider mb-1">Điện Thoại</p>
-                  <a href="tel:0912345678" className="text-white/90 text-sm hover:text-white transition-colors">
-                    0912 345 678
-                  </a>
+                <div className="flex-1">
+                  <p className="text-white/60 text-xs uppercase tracking-wider mb-1">Địa Chỉ 2</p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-2">269/39 Ông Ích Khiêm, Q. Hải Châu, TP. Đà Nẵng</p>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <a href="tel:0858757355" className="text-white/90 text-sm hover:text-white transition-colors">0858 757 355</a>
+                    <span className="text-white/60">-</span>
+                    <a href="tel:0766686600" className="text-white/90 text-sm hover:text-white transition-colors">0766 686 600</a>
+                  </div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -92,8 +100,8 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-white/60 text-xs uppercase tracking-wider mb-1">Email</p>
-                  <a href="mailto:info@chacaycasang.com" className="text-white/90 text-sm hover:text-white transition-colors">
-                    info@chacaycasang.com
+                  <a href="mailto:chacacaysang@gmail.com" className="text-white/90 text-sm hover:text-white transition-colors">
+                    chacacaysang@gmail.com
                   </a>
                 </div>
               </li>

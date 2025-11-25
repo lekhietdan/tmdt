@@ -313,11 +313,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-up">
               <div className="flex items-center gap-4 flex-wrap">
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 animate-bounce-in">
+                <div className="relative w-28 h-28 sm:w-32 sm:h-32 animate-bounce-in">
                   <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse-soft"></div>
                   <div className="relative w-full h-full">
                     <Image
-                      src="/logo.jpg"
+                      src="/lozgo.png"
                       alt="Chả Cá Cây Sang Logo"
                       fill
                       className="object-contain drop-shadow-2xl"
@@ -897,26 +897,60 @@ export default function Home() {
               id="contact-info"
               className={`space-y-8 transition-all duration-1000 ${visibleSections.has("contact-info") ? "animate-slide-left opacity-100" : "opacity-0"}`}
             >
-              {[
-                { icon: Phone, label: "Điện Thoại", value: "0912 345 678" },
-                { icon: Mail, label: "Email", value: "info@chacaycasang.com" },
-                { icon: MapPin, label: "Địa Chỉ", value: "123 Phố Vàng, Hà Nội" },
-              ].map((item, idx) => {
-                const Icon = item.icon
-                return (
-                  <div key={idx} className="flex gap-4 items-start p-4 rounded-xl bg-gradient-to-br from-white via-amber-50/12 to-orange-50/10 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
-                      <Icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
-                        {item.label}
-                      </p>
-                      <p className="text-lg text-foreground font-medium">{item.value}</p>
+              <div className="space-y-6">
+                {/* Địa chỉ 1 */}
+                <div className="flex gap-4 items-start p-4 rounded-xl bg-gradient-to-br from-white via-amber-50/12 to-orange-50/10 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                    <MapPin className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                      Địa Chỉ 1
+                    </p>
+                    <p className="text-lg text-foreground font-medium mb-2">87 - 89 Nguyễn Đức Trung, P.Thanh Khê Đông, Q.Thanh Khê, TP.Đà Nẵng</p>
+                    <div className="flex items-center gap-2 mt-2">
+                      <Phone className="w-4 h-4 text-primary" />
+                      <a href="tel:0917987656" className="text-base text-primary hover:text-primary/80 transition-colors font-medium">0917 987 656</a>
+                      <span className="text-muted-foreground">-</span>
+                      <a href="tel:0914168712" className="text-base text-primary hover:text-primary/80 transition-colors font-medium">0914 168 712</a>
                     </div>
                   </div>
-                )
-              })}
+                </div>
+
+                {/* Địa chỉ 2 */}
+                <div className="flex gap-4 items-start p-4 rounded-xl bg-gradient-to-br from-white via-amber-50/12 to-orange-50/10 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                    <MapPin className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                      Địa Chỉ 2
+                    </p>
+                    <p className="text-lg text-foreground font-medium mb-2">269/39 Ông Ích Khiêm, Q. Hải Châu, TP. Đà Nẵng</p>
+                    <div className="flex items-center gap-2 mt-2">
+                      <Phone className="w-4 h-4 text-primary" />
+                      <a href="tel:0858757355" className="text-base text-primary hover:text-primary/80 transition-colors font-medium">0858 757 355</a>
+                      <span className="text-muted-foreground">-</span>
+                      <a href="tel:0766686600" className="text-base text-primary hover:text-primary/80 transition-colors font-medium">0766 686 600</a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex gap-4 items-start p-4 rounded-xl bg-gradient-to-br from-white via-amber-50/12 to-orange-50/10 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                    <Mail className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+                      Email
+                    </p>
+                    <a href="mailto:chacacaysang@gmail.com" className="text-lg text-foreground font-medium hover:text-primary transition-colors">
+                      chacacaysang@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div

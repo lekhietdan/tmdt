@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo.jpg",
-        type: "image/jpeg",
+        url: "/lozgo.png",
+        type: "image/png",
       },
     ],
-    apple: "/logo.jpg",
+    apple: "/lozgo.png",
   },
   openGraph: {
     title: "Chả Cá Cây Sang",
